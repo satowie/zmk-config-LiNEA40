@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -83,7 +83,7 @@
 
         CenterClick {
             bindings = <&mkp MB3>;
-            key-positions = <17 16>;
+            key-positions = <16 18>;
         };
 
         RightClick {
@@ -93,12 +93,12 @@
 
         PrevClick {
             bindings = <&mkp MB4>;
-            key-positions = <27 29>;
+            key-positions = <17 15>;
         };
 
         ClickNext {
             bindings = <&mkp MB5>;
-            key-positions = <26 28>;
+            key-positions = <17 19>;
         };
 
         presstab {
@@ -140,6 +140,11 @@
             bindings = <&studio_unlock>;
             key-positions = <36 40>;
         };
+
+        mouseclick {
+            bindings = <&mkp MB1>;
+            key-positions = <16 17>;
+        };
     };
 
     behaviors {
@@ -175,10 +180,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E           &kp R    &lt 4 T                                     &lt 4 Y      &kp U  &kp I           &kp O          &lt 6 P
-&kp A             &kp S         &kp D           &kp F    &kp G                                       &kp H        &kp J  &kp K           &kp L          &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V    &kp B                                       &kp N        &kp M  &kp COMMA       &kp DOT        &mt RIGHT_SHIFT SLASH
-&mt LCTRL TAB     &kp LEFT_ALT  &mt LCMD LANG2  &kp INS  &lt 3 SPACE  &lt 2 RCMD    &lt 2 BACKSPACE  &lt 3 ENTER         &mt RCMD LANG1  &kp RIGHT_ALT  &lt 5 TAB
+&lt 6 Q             &kp W         &kp E           &kp R    &lt 4 T                                     &lt 4 Y      &kp U  &kp I           &kp O          &lt 6 P
+&mt LEFT_CONTROL A  &kp S         &kp D           &kp F    &kp G                                       &kp H        &kp J  &kp K           &kp L          &lt 5 MINUS
+&mt LEFT_SHIFT Z    &kp X         &kp C           &kp V    &kp B                                       &kp N        &kp M  &kp COMMA       &kp DOT        &mt RIGHT_SHIFT SLASH
+&mt LCTRL TAB       &kp LEFT_ALT  &mt LCMD LANG2  &kp INS  &lt 3 SPACE  &lt 2 RCMD    &lt 2 BACKSPACE  &lt 3 ENTER         &mt RCMD LANG1  &kp RIGHT_ALT  &lt 5 TAB
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
