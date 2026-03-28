@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -111,7 +111,6 @@
             key-positions = <11 10>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         esccombo {
@@ -155,7 +154,6 @@
             key-positions = <20 21>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         pressshiftr {
@@ -171,7 +169,6 @@
             key-positions = <20 22>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         pressopt-alt-r {
@@ -398,10 +395,10 @@
 
         Nav {
             bindings = <
-&kp ESC         &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &trans           &kp LC(LA(DELETE))
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp LC(LS(ESCAPE))
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans                     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp LC(LA(INS))
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans         &trans           &trans
+&kp ESC         &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &trans           &kp LC(LA(DELETE))
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW         &kp RIGHT_ARROW  &kp LC(LS(ESCAPE))
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans                     &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP          &kp END          &kp LC(LA(INS))
+&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                              &trans               &trans           &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
