@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -197,7 +197,7 @@
 
         vol_up {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <5 6>;
+            key-positions = <8 9>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -205,7 +205,7 @@
 
         vol_down {
             bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <8 9>;
+            key-positions = <5 6>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
