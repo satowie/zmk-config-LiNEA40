@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -152,14 +152,14 @@
         pressshift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <20 21>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <100>;
         };
 
         pressshiftr {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <29 28>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -197,7 +197,7 @@
 
         vol_up {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <8 9>;
+            key-positions = <16 17 18 19>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -205,7 +205,7 @@
 
         vol_down {
             bindings = <&kp C_VOLUME_DOWN>;
-            key-positions = <5 6>;
+            key-positions = <26 27 28 29>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -213,7 +213,7 @@
 
         play_stop {
             bindings = <&kp F8>;
-            key-positions = <15 16>;
+            key-positions = <6 7 8 9>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -277,7 +277,7 @@
 
         mute {
             bindings = <&kp K_MUTE>;
-            key-positions = <6 8>;
+            key-positions = <6 8 7>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -285,7 +285,7 @@
 
         previous {
             bindings = <&kp K_PREVIOUS>;
-            key-positions = <5 7>;
+            key-positions = <5 7 6>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -293,7 +293,7 @@
 
         next {
             bindings = <&kp C_NEXT>;
-            key-positions = <7 9>;
+            key-positions = <7 9 8>;
             timeout-ms = <45>;
             require-prior-idle-ms = <100>;
             layers = <0>;
