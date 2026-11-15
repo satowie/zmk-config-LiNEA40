@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -310,6 +310,16 @@
         layer6 {
             bindings = <&mo 6>;
             key-positions = <10 20>;
+        };
+
+        mouseclick2 {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+        };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <30 31>;
         };
     };
 
