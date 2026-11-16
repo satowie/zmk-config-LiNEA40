@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -181,7 +181,7 @@
 
         ctr-r {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <19 17>;
+            key-positions = <19 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -320,6 +320,16 @@
         layer4 {
             bindings = <&mo 4>;
             key-positions = <30 31>;
+        };
+
+        ctr_r_arrow {
+            bindings = <&kp LC(RIGHT_ARROW)>;
+            key-positions = <8 9>;
+        };
+
+        ctr_l_arrow {
+            bindings = <&kp RC(LEFT)>;
+            key-positions = <5 6>;
         };
     };
 
